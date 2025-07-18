@@ -6293,7 +6293,8 @@ int bt_sco_player(bool on, enum APP_SYSFREQ_FREQ_T freq) {
     stream_cfg.vol = stream_local_volume;
 
     stream_cfg.device = AUD_STREAM_USE_INT_CODEC;
-    stream_cfg.io_path = AUD_INPUT_PATH_MAINMIC;
+    // stream_cfg.io_path = AUD_INPUT_PATH_MAINMIC;
+    stream_cfg.io_path = AUD_INPUT_PATH_ANC_FB_MIC;
     stream_cfg.handler = bt_sco_codec_capture_data;
     app_audio_mempool_get_buff(&bt_audio_buff, stream_cfg.data_size);
     stream_cfg.data_ptr = BT_AUDIO_CACHE_2_UNCACHE(bt_audio_buff);

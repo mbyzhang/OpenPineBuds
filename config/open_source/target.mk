@@ -67,7 +67,7 @@ AUDIO_OUTPUT_DIFF ?= 0
 DIGMIC_HIGH_VOLT ?= 0 
 
 #### ANC DEFINE START ######
-export ANC_APP		    ?= 1
+export ANC_APP		    ?= 0
 # Feed Forward  ANC configuration (external mic)
 export ANC_FF_ENABLED	?= 1
 # Feed Backward ANC configuration (internal mic)

@@ -235,6 +235,8 @@ enum AUD_IO_PATH_T {
     AUD_INPUT_PATH_NTMIC,
     AUD_INPUT_PATH_ANC_WNR, // Wind Noise Reduction
     AUD_INPUT_PATH_USBAUDIO,
+    AUD_INPUT_PATH_ANC_FF_MIC, // ANC Feed Forward Mic
+    AUD_INPUT_PATH_ANC_FB_MIC, // ANC Feed Back Mic
 #ifdef ANC_ASSIST_ENABLED
     AUD_INPUT_PATH_AF_ANC,
 #endif

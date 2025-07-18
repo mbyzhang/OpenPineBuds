@@ -205,6 +205,14 @@ const struct AUD_IO_PATH_CFG_T
             CFG_HW_AUD_INPUT_PATH_MAINMIC_DEV,
         },
 #endif
+        {
+            AUD_INPUT_PATH_ANC_FF_MIC,
+            ANC_FF_MIC | ANC_VMIC_CFG,
+        },
+        {
+            AUD_INPUT_PATH_ANC_FB_MIC,
+            ANC_FB_MIC | ANC_VMIC_CFG,
+        },
 };
 
 const struct HAL_IOMUX_PIN_FUNCTION_MAP app_battery_ext_charger_enable_cfg = {
